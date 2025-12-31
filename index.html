@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>TRADE WITH ROOM</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,Helvetica,sans-serif;
+}
+
+/* PAGE */
+body{
+  background:#f6f9ff;
+  text-align:center;
+}
+
+/* TOP TELEGRAM BAR */
+.top-bar{
+  width:100%;
+  background:#00AEEF;
+  color:#fff;
+  padding:12px 0;
+  font-weight:700;
+}
+.top-bar a{
+  color:#fff;
+  text-decoration:underline;
+}
+
+/* MAIN CARD */
+.card{
+  max-width:550px;
+  margin:25px auto 40px;
+  background:#fff;
+  padding:28px 20px 35px;
+  border-radius:22px;
+  box-shadow:0 20px 55px rgba(0,0,0,.25);
+}
+
+/* PROFILE */
+.profile{
+  width:160px;
+  height:160px;
+  border-radius:50%;
+  object-fit:cover;
+  display:block;
+  margin:15px auto 10px;
+  border:4px solid #00aeff;
+  box-shadow:0 0 25px rgba(0,174,255,.3);
+}
+
+/* HEADINGS */
+.title{
+  color:#0074d6;
+  font-size:26px;
+  font-weight:900;
+  margin-top:8px;
+}
+.sub{
+  color:#0074d6;
+  font-size:17px;
+  font-weight:700;
+  margin-top:8px;
+}
+.green{
+  color:#198200;
+  font-size:18px;
+  font-weight:800;
+  margin:10px 0;
+}
+
+/* CONTENT */
+.boldline{
+  font-size:18px;
+  margin-top:10px;
+  font-weight:800;
+}
+.points{
+  margin-top:14px;
+  font-size:16px;
+  line-height:1.6;
+  color:#222;
+  text-align:left;
+  display:inline-block;
+}
+
+/* BTN */
+.cta{
+  width:85%;
+  background:#007bff;
+  color:white;
+  display:block;
+  padding:15px;
+  margin:20px auto 8px;
+  border-radius:35px;
+  font-size:18px;
+  font-weight:900;
+  text-decoration:none !important;
+  box-shadow:0 10px 35px rgba(0,123,255,.4);
+}
+.cta:hover{
+  transform:scale(1.04);
+}
+
+/* TIMER */
+.timer{
+  margin-top:8px;
+  color:#d30000;
+  font-weight:900;
+  font-size:17px;
+}
+
+/* MOBILE */
+@media(max-width:700px){
+  .card{
+    max-width:92%;
+    padding:22px 16px;
+  }
+  .profile{
+    width:135px;
+    height:135px;
+  }
+  .title{
+    font-size:22px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="top-bar">
+  Don’t have Telegram yet? <a href="https://telegram.org">Try it now</a>
+</div>
+
+<div class="card">
+
+  <img src="https://thinkbigx.sbs/wp-content/uploads/2025/12/trradeee.jpg" class="profile">
+
+  <h2 class="title">TRADE WITH ROOM</h2>
+  <p class="sub">(SEBI REGISTERED)</p>
+
+  <p class="boldline">Learn how to Trade with<br><b>Professional Experts</b></p>
+
+  <p class="green">Options Trading Ab Rocket Science Nahi!</p>
+
+  <p class="boldline">7,00,000+ Subscribers</p>
+
+  <div class="points">
+  ✔️ SEBI Registered — Bharosa Pakka<br>
+  ✔️ Daily Nifty • Banknifty • Stocks Signals<br>
+  ✔️ Verified & Trusted Guidance<br>
+  ✔️ India’s Serious Traders Community
+  </div>
+
+  <p class="timer">00 Min <span id="sec">10</span> Sec ⏳ Time is Running</p>
+
+  <a href="https://t.me/+SBEYrfQCzZViOGY1" class="cta">
+    Join Telegram Now 🚀
+  </a>
+
+</div>
+
+<script>
+let s=10;
+setInterval(()=>{
+  if(s>0){
+    s--;
+    document.getElementById("sec").innerText=s;
+  }
+},1000);
+</script>
+
+</body>
+</html>
